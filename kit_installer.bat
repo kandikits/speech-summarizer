@@ -15,6 +15,7 @@ SET REPO_DEPENDENCIES_URL=https://raw.githubusercontent.com/kandikits/speech-sum
 SET REPO_NAME=speech-summarizer.zip
 SET EXTRACTED_REPO_DIR=speech-summarizer-main
 SET NOTEBOOK_NAME=Speech Summarizer.ipynb
+SET NOTEBOOK_NAME2=Course Shorts App.ipynb
 where /q python
 IF ERRORLEVEL 1 (
 	ECHO==========================================================================
@@ -68,6 +69,7 @@ IF /I "%CONFIRM%" NEQ "Y" (
 	ECHO 	Extracting the repo ...	
 	ECHO==========================================================================
 	tar -xvf %REPO_NAME%
+	jupyter notebook "%EXTRACTED_REPO_DIR%\%NOTEBOOK_NAME2%"
 	jupyter notebook "%EXTRACTED_REPO_DIR%\%NOTEBOOK_NAME%"
 )
 PAUSE
