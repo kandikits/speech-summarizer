@@ -4,6 +4,10 @@ Transcribes and summarizes speech or audio
 ### Pre-requisite
 The app requires python3 to be installed in the machine since the programming language used is Python
 
+### Quickstart guide
+Refer kits from the link below to jumpstart the app
+* https://kandi.openweaver.com/collections/speech-processing/speech-summarizer
+* https://kandi.openweaver.com/collections/speech-processing/course-shorts
 ### Installation Guide
 Once the python is installed, install all the dependencies by running the below command.
 
